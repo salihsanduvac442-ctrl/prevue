@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fc7e8"/>
+      <stop offset="1" stop-color="#e8f3fa"/>
+    </linearGradient>
+    <linearGradient id="floorG3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c9b28f"/>
+      <stop offset="1" stop-color="#a3875f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="540" fill="url(#skyG)"/>
+  <circle cx="1350" cy="150" r="70" fill="#ffe9a8"/>
+  <rect y="540" width="1600" height="360" fill="url(#floorG3)"/>
+  <rect y="480" width="1600" height="60" fill="#3d7ea6" opacity="0.6"/>
+  <rect x="0" y="500" width="1600" height="10" fill="#4a3a2a"/>
+  <g fill="#4a3a2a">
+    <rect x="60" y="460" width="8" height="50"/>
+    <rect x="220" y="460" width="8" height="50"/>
+    <rect x="380" y="460" width="8" height="50"/>
+    <rect x="540" y="460" width="8" height="50"/>
+    <rect x="700" y="460" width="8" height="50"/>
+    <rect x="860" y="460" width="8" height="50"/>
+    <rect x="1020" y="460" width="8" height="50"/>
+    <rect x="1180" y="460" width="8" height="50"/>
+    <rect x="1340" y="460" width="8" height="50"/>
+    <rect x="1500" y="460" width="8" height="50"/>
+  </g>
+  <g>
+    <line x1="700" y1="620" x2="700" y2="760" stroke="#5f4630" stroke-width="10"/>
+    <path d="M560 620 A140 90 0 0 1 840 620 Z" fill="#c85a4a"/>
+    <ellipse cx="700" cy="800" rx="90" ry="26" fill="#3d2b1f" opacity="0.3"/>
+    <circle cx="620" cy="820" r="22" fill="#7a5a3a"/>
+    <circle cx="780" cy="820" r="22" fill="#7a5a3a"/>
+  </g>
+  <g>
+    <line x1="1150" y1="600" x2="1150" y2="740" stroke="#5f4630" stroke-width="10"/>
+    <path d="M1030 600 A120 80 0 0 1 1270 600 Z" fill="#5aa0c8"/>
+    <ellipse cx="1150" cy="780" rx="80" ry="22" fill="#3d2b1f" opacity="0.3"/>
+    <circle cx="1090" cy="800" r="20" fill="#7a5a3a"/>
+    <circle cx="1210" cy="800" r="20" fill="#7a5a3a"/>
+  </g>
+  <text x="800" y="860" font-family="Arial" font-size="22" fill="#00000088" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
+</svg>
