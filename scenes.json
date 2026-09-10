@@ -1,0 +1,45 @@
+{
+  "venue": "Lacivert Restoran & Teras (örnek işletme)",
+  "start": "giris",
+  "scenes": [
+    {
+      "id": "giris",
+      "title": "Giriş & Karşılama",
+      "image": "assets/scene-giris.svg",
+      "note": "Kapıdan girer girmez karşılama alanı ve bekleme köşesi.",
+      "hotspots": [
+        { "x": 50, "y": 62, "target": "salon", "label": "Ana Salona geç" }
+      ]
+    },
+    {
+      "id": "salon",
+      "title": "Ana Salon",
+      "image": "assets/scene-salon.svg",
+      "note": "Pencere kenarı masalar, gün ışığı alan geniş oturma alanı.",
+      "hotspots": [
+        { "x": 6, "y": 70, "target": "giris", "label": "Girişe dön" },
+        { "x": 92, "y": 68, "target": "teras", "label": "Terasa çık" },
+        { "x": 50, "y": 90, "target": "bar", "label": "Bara geç" }
+      ]
+    },
+    {
+      "id": "teras",
+      "title": "Deniz Manzaralı Teras",
+      "image": "assets/scene-teras.svg",
+      "note": "Akşam saatlerinde gün batımı manzarası, açık hava masaları.",
+      "hotspots": [
+        { "x": 8, "y": 55, "target": "salon", "label": "Ana Salona dön" }
+      ]
+    },
+    {
+      "id": "bar",
+      "title": "Bar Köşesi",
+      "image": "assets/scene-bar.svg",
+      "note": "Canlı müzik akşamlarında öne çıkan bar ve yüksek masalar.",
+      "hotspots": [
+        { "x": 8, "y": 88, "target": "salon", "label": "Ana Salona dön" }
+      ]
+    }
+  ]
+}
+
