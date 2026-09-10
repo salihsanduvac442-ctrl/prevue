@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="wallG4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2420"/>
+      <stop offset="1" stop-color="#181310"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wallG4)"/>
+  <rect x="200" y="120" width="1200" height="260" rx="6" fill="#3a2f28"/>
+  <g fill="#e8c877" opacity="0.85">
+    <rect x="240" y="150" width="24" height="90"/>
+    <rect x="290" y="160" width="24" height="80"/>
+    <rect x="340" y="140" width="24" height="100"/>
+    <rect x="390" y="155" width="24" height="85"/>
+    <rect x="1000" y="150" width="24" height="90"/>
+    <rect x="1050" y="160" width="24" height="80"/>
+    <rect x="1100" y="140" width="24" height="100"/>
+    <rect x="1150" y="155" width="24" height="85"/>
+  </g>
+  <rect x="120" y="500" width="1360" height="80" rx="8" fill="#5a4230"/>
+  <rect x="120" y="580" width="1360" height="220" rx="4" fill="#3a2c20"/>
+  <g fill="#7a5a3a">
+    <circle cx="300" cy="700" r="26"/>
+    <rect x="292" y="726" width="16" height="60"/>
+    <circle cx="500" cy="700" r="26"/>
+    <rect x="492" y="726" width="16" height="60"/>
+    <circle cx="700" cy="700" r="26"/>
+    <rect x="692" y="726" width="16" height="60"/>
+    <circle cx="900" cy="700" r="26"/>
+    <rect x="892" y="726" width="16" height="60"/>
+  </g>
+  <line x1="500" y1="0" x2="500" y2="200" stroke="#3d2b1f" stroke-width="4"/>
+  <ellipse cx="500" cy="220" rx="26" ry="14" fill="#e8c877"/>
+  <line x1="900" y1="0" x2="900" y2="200" stroke="#3d2b1f" stroke-width="4"/>
+  <ellipse cx="900" cy="220" rx="26" ry="14" fill="#e8c877"/>
+  <text x="800" y="860" font-family="Arial" font-size="22" fill="#ffffff99" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
+</svg>
