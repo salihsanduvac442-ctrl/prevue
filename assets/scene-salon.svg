@@ -11,10 +11,12 @@
   </defs>
   <rect width="1600" height="500" fill="url(#wallG2)"/>
   <rect y="500" width="1600" height="400" fill="url(#floorG2)"/>
+  <!-- windows -->
   <rect x="120" y="80" width="260" height="320" rx="6" fill="#bcd7e0"/>
   <rect x="120" y="80" width="260" height="320" rx="6" fill="none" stroke="#5f4630" stroke-width="10"/>
   <rect x="1220" y="80" width="260" height="320" rx="6" fill="#bcd7e0"/>
   <rect x="1220" y="80" width="260" height="320" rx="6" fill="none" stroke="#5f4630" stroke-width="10"/>
+  <!-- tables -->
   <g>
     <ellipse cx="420" cy="640" rx="110" ry="40" fill="#3d2b1f" opacity="0.35"/>
     <rect x="360" y="560" width="120" height="14" rx="6" fill="#e8ddce"/>
@@ -36,11 +38,12 @@
     <circle cx="1060" cy="660" r="26" fill="#7a5a3a"/>
     <circle cx="1300" cy="660" r="26" fill="#7a5a3a"/>
   </g>
+  <!-- ceiling lamps -->
   <line x1="420" y1="0" x2="420" y2="120" stroke="#3d2b1f" stroke-width="4"/>
   <ellipse cx="420" cy="140" rx="34" ry="18" fill="#e8c877"/>
   <line x1="800" y1="0" x2="800" y2="140" stroke="#3d2b1f" stroke-width="4"/>
   <ellipse cx="800" cy="160" rx="34" ry="18" fill="#e8c877"/>
   <line x1="1180" y1="0" x2="1180" y2="120" stroke="#3d2b1f" stroke-width="4"/>
   <ellipse cx="1180" cy="140" rx="34" ry="18" fill="#e8c877"/>
-  <text x="800" y="860" font-family="Arial" font-size="22" fill="#ffffffaa" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
+  <text x="800" y="55" font-family="Arial" font-size="22" fill="#ffffffaa" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
 </svg>
