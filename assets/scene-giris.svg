@@ -11,16 +11,19 @@
   </defs>
   <rect width="1600" height="560" fill="url(#wallG)"/>
   <rect y="560" width="1600" height="340" fill="url(#floorG)"/>
+  <!-- door -->
   <rect x="680" y="180" width="240" height="380" rx="8" fill="#3d2b1f"/>
   <rect x="700" y="200" width="200" height="340" rx="4" fill="#7a5a3a"/>
   <circle cx="880" cy="380" r="6" fill="#e8c877"/>
+  <!-- welcome sign -->
   <rect x="560" y="90" width="480" height="70" rx="10" fill="#2f2a24" opacity="0.85"/>
   <text x="800" y="136" font-family="Georgia, serif" font-size="34" fill="#f3e9d8" text-anchor="middle">Hoş Geldiniz</text>
+  <!-- plants -->
   <ellipse cx="200" cy="620" rx="60" ry="18" fill="#3d2b1f" opacity="0.5"/>
   <rect x="170" y="480" width="60" height="140" rx="6" fill="#6b4a30"/>
   <circle cx="200" cy="440" r="90" fill="#3f7a4d"/>
   <ellipse cx="1400" cy="620" rx="60" ry="18" fill="#3d2b1f" opacity="0.5"/>
   <rect x="1370" y="480" width="60" height="140" rx="6" fill="#6b4a30"/>
   <circle cx="1400" cy="440" r="90" fill="#3f7a4d"/>
-  <text x="800" y="860" font-family="Arial" font-size="22" fill="#ffffffaa" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
+  <text x="800" y="55" font-family="Arial" font-size="22" fill="#ffffffaa" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
 </svg>
