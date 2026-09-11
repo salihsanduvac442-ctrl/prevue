@@ -12,7 +12,9 @@
   <rect width="1600" height="540" fill="url(#skyG)"/>
   <circle cx="1350" cy="150" r="70" fill="#ffe9a8"/>
   <rect y="540" width="1600" height="360" fill="url(#floorG3)"/>
+  <!-- sea/horizon -->
   <rect y="480" width="1600" height="60" fill="#3d7ea6" opacity="0.6"/>
+  <!-- railing -->
   <rect x="0" y="500" width="1600" height="10" fill="#4a3a2a"/>
   <g fill="#4a3a2a">
     <rect x="60" y="460" width="8" height="50"/>
@@ -26,6 +28,7 @@
     <rect x="1340" y="460" width="8" height="50"/>
     <rect x="1500" y="460" width="8" height="50"/>
   </g>
+  <!-- umbrella table -->
   <g>
     <line x1="700" y1="620" x2="700" y2="760" stroke="#5f4630" stroke-width="10"/>
     <path d="M560 620 A140 90 0 0 1 840 620 Z" fill="#c85a4a"/>
@@ -40,5 +43,5 @@
     <circle cx="1090" cy="800" r="20" fill="#7a5a3a"/>
     <circle cx="1210" cy="800" r="20" fill="#7a5a3a"/>
   </g>
-  <text x="800" y="860" font-family="Arial" font-size="22" fill="#00000088" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
+  <text x="800" y="55" font-family="Arial" font-size="22" fill="#00000088" text-anchor="middle">ÖRNEK GÖRSEL — PreVue Demo Turu</text>
 </svg>
