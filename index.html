@@ -8,15 +8,15 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="nav">
+  <div class="nav" id="nav">
     <div class="logo">PreVue<span>.</span></div>
     <a class="cta" href="demo.html">Canlı Demo'yu Dene</a>
   </div>
 
   <section class="hero">
-    <div>
+    <div data-reveal>
       <span class="eyebrow">Restoran · Otel · Emlak · Mağaza · Showroom</span>
-      <h1>Gitmeden önce, mekânı gerçekten gör.</h1>
+      <h1>Gitmeden önce,<br>mekânı gerçekten gör.</h1>
       <p class="lead">
         PreVue, işletmenin fotoğraf ve videolarını kullanarak gezilebilir bir
         ön izleme oluşturur. Müşterin masasını, odasını, manzarasını
@@ -28,16 +28,17 @@
         <a class="btn btn-secondary" href="#pricing">Fiyatlandırmayı Gör</a>
       </div>
     </div>
-    <div class="hero-card">
+    <div class="hero-card" data-reveal>
+      <div class="browser-bar"><span></span><span></span><span></span></div>
       <img src="assets/scene-teras.svg" alt="PreVue örnek gezilebilir tur önizlemesi">
       <div class="cap">Örnek gezilebilir tur — tıkla, mekânda dolaş.</div>
     </div>
   </section>
 
   <section class="section">
-    <h2>Nasıl çalışır</h2>
-    <p class="sub">İşletme sahibi için üç basit adım, müşteri için tek bir bakış.</p>
-    <div class="grid3">
+    <h2 data-reveal>Nasıl çalışır</h2>
+    <p class="sub" data-reveal>İşletme sahibi için üç basit adım, müşteri için tek bir bakış.</p>
+    <div class="grid3" data-reveal="stagger">
       <div class="card">
         <div class="icon">📷</div>
         <h3>1. Fotoğraf/video yükle</h3>
@@ -56,21 +57,21 @@
     </div>
   </section>
 
-  <section class="section" style="background:#f3ece0;">
-    <h2>Kimler için</h2>
-    <p class="sub">Fiziksel bir mekânı olan ve rezervasyon/ziyaret öncesi güven oluşturmak isteyen her işletme.</p>
-    <div class="grid3">
-      <div class="card"><h3>🍽️ Restoranlar</h3><p>Teras mi, pencere kenarı mı, özel oda mı — müşteri seçsin.</p></div>
-      <div class="card"><h3>🏨 Oteller</h3><p>Oda tipini ve manzarayı rezervasyondan önce net biçimde göster.</p></div>
-      <div class="card"><h3>🏠 Emlak</h3><p>Fiziksel ziyaretten önce daireyi/villayı gezdirerek zaman kazandır.</p></div>
-      <div class="card"><h3>🛍️ Mağaza & Showroom</h3><p>Ürün ve mekân yerleşimini müşteriye önceden hissettir.</p></div>
+  <section class="section alt">
+    <h2 data-reveal>Kimler için</h2>
+    <p class="sub" data-reveal>Fiziksel bir mekânı olan ve rezervasyon/ziyaret öncesi güven oluşturmak isteyen her işletme.</p>
+    <div class="grid4" data-reveal="stagger">
+      <div class="card"><div class="icon">🍽️</div><h3>Restoranlar</h3><p>Teras mi, pencere kenarı mı, özel oda mı — müşteri seçsin.</p></div>
+      <div class="card"><div class="icon">🏨</div><h3>Oteller</h3><p>Oda tipini ve manzarayı rezervasyondan önce net biçimde göster.</p></div>
+      <div class="card"><div class="icon">🏠</div><h3>Emlak</h3><p>Fiziksel ziyaretten önce daireyi/villayı gezdirerek zaman kazandır.</p></div>
+      <div class="card"><div class="icon">🛍️</div><h3>Mağaza & Showroom</h3><p>Ürün ve mekân yerleşimini müşteriye önceden hissettir.</p></div>
     </div>
   </section>
 
   <section class="section" id="pricing">
-    <h2>Fiyatlandırma</h2>
-    <p class="sub">İşletme aboneliği + öne çıkarma + kullanıcı paketleri.</p>
-    <div class="pricing">
+    <h2 data-reveal>Fiyatlandırma</h2>
+    <p class="sub" data-reveal>İşletme aboneliği + öne çıkarma + kullanıcı paketleri.</p>
+    <div class="pricing" data-reveal="stagger">
       <div class="plan">
         <div class="tag">Başlangıç</div>
         <div class="price">9,99$ <span>/ay</span></div>
@@ -105,5 +106,23 @@
   <footer>
     PreVue — bu sayfa erken aşama bir MVP demosudur. Görseller örnek amaçlıdır.
   </footer>
+
+  <script>
+    var navEl = document.getElementById('nav');
+    window.addEventListener('scroll', function () {
+      navEl.classList.toggle('scrolled', window.scrollY > 8);
+    }, { passive: true });
+
+    var revealEls = document.querySelectorAll('[data-reveal]');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  </script>
 </body>
 </html>
